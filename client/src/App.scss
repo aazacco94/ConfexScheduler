@@ -1,0 +1,128 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/bootstrap-grid';
+
+// Color definitions
+$primary: #1c3664;
+$secondary: #4ac2c4;
+$danger: #dc3545;
+
+// Override bootstrap theme
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  danger: $danger,
+);
+
+$form-range-track-bg: $white;
+$form-range-track-width: 80%;
+$form-range-track-height: 0.25rem;
+$form-range-thumb-width: 0.625rem;
+$form-range-thumb-height: $form-range-thumb-width;
+
+// Must be imported after overriding bootstrap theme
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: $light;
+}
+
+.main-header {
+  background-image: linear-gradient(45deg, $secondary, $primary);
+  font-weight: bold;
+  color:white;
+}
+
+.section-header {
+  > h1 {
+    font-size: 1.25rem;
+  }
+  padding: 8px 0 4px 0;
+  margin-bottom: $spacer * .25; // mb-1
+  background-color: $primary;
+  color: $white;
+}
+
+.main-components {
+  max-width: 720px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.upload-components {
+  max-width: 900px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.left-menu {
+  background-color: $gray-300;
+  max-width: 175px;
+
+  & .menu-title {
+    margin-top: $spacer * .5; // mt-2
+    font-size: 1.25rem;
+  }
+  & legend {
+    font-size: 0.75rem;
+  }
+  & label {
+    font-size: 0.625rem;
+  }
+  & .action-button {
+    font-size: 0.75rem;
+    max-width: 92px;
+  }
+}
+
+table {
+  font-size: 0.75rem;
+}
+
+.pagination > li > a
+{
+  background-color: $white;
+  color: $primary
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+  color: $gray-800;
+  background-color: $gray-200;
+  border-color: $gray-300;
+}
+
+.pagination > .active > a
+{
+  color: $white;
+  background-color: $primary !important;
+  border: solid 1px $primary !important;
+}
+
+.pagination > .active > a:hover
+{
+  background-color: $primary !important;
+  border: solid 1px $primary !important;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: $blue-500;
+}
+
+.select-all-btn {
+  background: none;
+  border: none;
+  color: $blue-500;
+}
+
+.del-btn {
+  background: none;
+  border: none;
+  color: $danger;
+}

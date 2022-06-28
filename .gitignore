@@ -1,0 +1,23 @@
+### Firebase ###
+.firebase/
+**/.firebaserc
+
+### IDE ##
+# Intellij
+.idea/
+
+### Node ###
+# logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Misc
+.DS_Store
+
+# JSON files created at runtime
+/data/*.json
+JSON*.json

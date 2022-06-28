@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "react-app",
+        "react-app/jest",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "arrow-parens": ["error", "as-needed"],
+        "linebreak-style": "off",
+        "no-param-reassign": "off",
+        "spaced-comment": "off",
+        "no-console": "off"
+    }
+}
